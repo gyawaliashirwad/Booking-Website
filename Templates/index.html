@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourism Website</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Our Tourism Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#kathmandu">Kathmandu</a></li>
+          <li><a href="#pokhara">Pokhara</a></li>
+          <li><a href="#bhairahawa">Bhairahawa</a></li>
+          <li><a href="#chitwan">Chitwan</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="section">
+      <div id="overlay">
+        <h1>Join Us To Enjoy Your Trip To Nepal</h1>
+      </div>
+    </section>
+
+    <section id="kathmandu">
+      <h2>Kathmandu</h2>
+      <div class="destination-container">
+        <h3>Hotels</h3>
+        <div class="hotel">
+          <h4>Hotel Hyatt</h4>
+          <img
+            src="/static/images/hyatt.jpg"
+            alt="hyatt"
+            class="destination-image"
+          />
+          <p>Price: $100/night</p>
+
+          <form action="https://formspree.io/f/mgvopbwd" method="POST">
+            <label for="email">Enter Your Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email-hyatt"
+              required
+              placeholder="Your Email"
+            />
+
+            <label for="date-hyatt">Select Date:</label>
+            <input type="date" name="date" id="date-hyatt" required />
+
+            <label for="time-hyatt">Select Time:</label>
+            <input type="time" name="time" id="time-hyatt" required />
+
+            <label for="room-type-hyatt">Type of Room:</label>
+            <select name="room_type" id="room-type-hyatt" required>
+              <option value="" disabled selected>Select Room Type</option>
+              <option value="single">Single Bed</option>
+              <option value="double">Double Bed</option>
+            </select>
+
+            <label for="rooms-hyatt">Number of Rooms:</label>
+            <input
+              type="number"
+              name="rooms"
+              id="rooms-hyatt"
+              min="1"
+              value="1"
+              required
+            />
+
+            <label for="people-hyatt">Total People:</label>
+            <input
+              type="number"
+              name="people"
+              id="people-hyatt"
+              min="1"
+              value="1"
+              required
+            />
+
+            <button type="submit">Book Now</button>
+          </form>
+
+          <button
+            class="view-map"
+            onclick="openMap('https://maps.app.goo.gl/Xr4P4Mt6bEh7WfGW9')"
+          >
+            Map
+          </button>
+        </div>
+
+        <div class="hotel">
+          <h4>Hotel Shanker</h4>
+          <img
+            src="/static/images/shanker.jpg"
+            alt="shanker"
+            class="destination-image"
+          />
+          <p>Price: $110/night</p>
+
+          <form action="https://formspree.io/f/mgvopbwd" method="POST">
+            <label for="email">Enter Your Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email-shanker"
+              required
+              placeholder="Your Email"
+            />
+
+            <label for="date-shanker">Select Date:</label>
+            <input type="date" name="date" id="date-shanker" required />
+
+            <label for="time-shanker">Select Time:</label>
+            <input type="time" name="time" id="time-shanker" required />
+
+            <label for="room-type-shanker">Type of Room:</label>
+            <select name="room_type" id="room-type-shanker" required>
+              <option value="" disabled selected>Select Room Type</option>
+              <option value="single">Single Bed</option>
+              <option value="double">Double Bed</option>
+            </select>
+
+            <label for="rooms-shanker">Number of Rooms:</label>
+            <input
+              type="number"
+              name="rooms"
+              id="rooms-shanker"
+              min="1"
+              value="1"
+              required
+            />
+
+            <label for="people-shanker">Total People:</label>
+            <input
+              type="number"
+              name="people"
+              id="people-shanker"
+              min="1"
+              value="1"
+              required
+            />
+
+            <button type="submit">Book Now</button>
+          </form>
+
+          <button
+            class="view-map"
+            onclick="openMap('https://maps.app.goo.gl/kZujebULZCi3gedc8')"
+          >
+            Map
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="pokhara">
+      <h2>Pokhara</h2>
+      <div class="destination-container">
+        <h3>Hotels</h3>
+        <div class="hotel">
+          <h4>Hotel Kantipur</h4>
+          <img
+            src="/static/images/kantipur.jpg"
+            alt="kantipur"
+            class="destination-image"
+          />
+          <p>Price: $120/night</p>
+
+          <form action="https://formspree.io/f/mgvopbwd" method="POST">
+            <label for="email">Enter Your Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email-kantipur"
+              required
+              placeholder="Your Email"
+            />
+
+            <label for="date-kantipur">Select Date:</label>
+            <input type="date" name="date" id="date-kantipur" required />
+
+            <label for="time-kantipur">Select Time:</label>
+            <input type="time" name="time" id="time-kantipur" required />
+
+            <label for="room-type-kantipur">Type of Room:</label>
+            <select name="room_type" id="room-type-kantipur" required>
+              <option value="" disabled selected>Select Room Type</option>
+              <option value="single">Single Bed</option>
+              <option value="double">Double Bed</option>
+            </select>
+
+            <label for="rooms-kantipur">Number of Rooms:</label>
+            <input
+              type="number"
+              name="rooms"
+              id="rooms-kantipur"
+              min="1"
+              value="1"
+              required
+            />
+
+            <label for="people-kantipur">Total People:</label>
+            <input
+              type="number"
+              name="people"
+              id="people-kantipur"
+              min="1"
+              value="1"
+              required
+            />
+
+            <button type="submit">Book Now</button>
+          </form>
+
+          <button
+            class="view-map"
+            onclick="openMap('https://maps.app.goo.gl/SWXhK3yt13Zbds8v6')"
+          >
+            Map
+          </button>
+        </div>
+
+        <div class="hotel">
+          <h4>Hotel Fewa</h4>
+          <img
+            src="/static/images/paradise.jpg"
+            alt="fewa"
+            class="destination-image"
+          />
+          <p>Price: $130/night</p>
+
+          <form action="https://formspree.io/f/mgvopbwd" method="POST">
+            <label for="email">Enter Your Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email-fewa"
+              required
+              placeholder="Your Email"
+            />
+
+            <label for="date-fewa">Select Date:</label>
+            <input type="date" name="date" id="date-fewa" required />
+
+            <label for="time-fewa">Select Time:</label>
+            <input type="time" name="time" id="time-fewa" required />
+
+            <label for="room-type-fewa">Type of Room:</label>
+            <select name="room_type" id="room-type-fewa" required>
+              <option value="" disabled selected>Select Room Type</option>
+              <option value="single">Single Bed</option>
+              <option value="double">Double Bed</option>
+            </select>
+
+            <label for="rooms-fewa">Number of Rooms:</label>
+            <input
+              type="number"
+              name="rooms"
+              id="rooms-fewa"
+              min="1"
+              value="1"
+              required
+            />
+
+            <label for="people-fewa">Total People:</label>
+            <input
+              type="number"
+              name="people"
+              id="people-fewa"
+              min="1"
+              value="1"
+              required
+            />
+
+            <button type="submit">Book Now</button>
+          </form>
+
+          <button
+            class="view-map"
+            onclick="openMap('https://maps.app.goo.gl/oJh5NPXah6sU3LRx9')"
+          >
+            Map
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="bhairahawa">
+      <h2>Bhairahawa</h2>
+      <div class="destination-container">
+        <h3>Hotels</h3>
+        <div class="hotel">
+          <h4>Tiger Resort</h4>
+          <img
+            src="/static/images/tiger.webp"
+            alt="tiger_resort"
+            class="destination-image"
+          />
+          <p>Price: $90/night</p>
+
+          <form action="https://formspree.io/f/mgvopbwd" method="POST">
+            <label for="email">Enter Your Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email-tiger"
+              required
+              placeholder="Your Email"
+            />
+
+            <label for="date-tiger">Select Date:</label>
+            <input type="date" name="date" id="date-tiger" required />
+
+            <label for="time-tiger">Select Time:</label>
+            <input type="time" name="time" id="time-tiger" required />
+
+            <label for="room-type-tiger">Type of Room:</label>
+            <select name="room_type" id="room-type-tiger" required>
+              <option value="" disabled selected>Select Room Type</option>
+              <option value="single">Single Bed</option>
+              <option value="double">Double Bed</option>
+            </select>
+
+            <label for="rooms-tiger">Number of Rooms:</label>
+            <input
+              type="number"
+              name="rooms"
+              id="rooms-tiger"
+              min="1"
+              value="1"
+              required
+            />
+
+            <label for="people-tiger">Total People:</label>
+            <input
+              type="number"
+              name="people"
+              id="people-tiger"
+              min="1"
+              value="1"
+              required
+            />
+
+            <button type="submit">Book Now</button>
+          </form>
+
+          <button
+            class="view-map"
+            onclick="openMap('https://maps.app.goo.gl/1MgWQhAhyavF9P4S7')"
+          >
+            Map
+          </button>
+        </div>
+
+        <div class="hotel">
+          <h4>Asian Buddha Hotel</h4>
+          <img
+            src="/static/images/buddha.jpg"
+            alt="siddhartha"
+            class="destination-image"
+          />
+          <p>Price: $95/night</p>
+
+          <form action="https://formspree.io/f/mgvopbwd" method="POST">
+            <label for="email">Enter Your Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email-siddhartha"
+              required
+              placeholder="Your Email"
+            />
+
+            <label for="date-siddhartha">Select Date:</label>
+            <input type="date" name="date" id="date-siddhartha" required />
+
+            <label for="time-siddhartha">Select Time:</label>
+            <input type="time" name="time" id="time-siddhartha" required />
+
+            <label for="room-type-siddhartha">Type of Room:</label>
+            <select name="room_type" id="room-type-siddhartha" required>
+              <option value="" disabled selected>Select Room Type</option>
+              <option value="single">Single Bed</option>
+              <option value="double">Double Bed</option>
+            </select>
+
+            <label for="rooms-siddhartha">Number of Rooms:</label>
+            <input
+              type="number"
+              name="rooms"
+              id="rooms-siddhartha"
+              min="1"
+              value="1"
+              required
+            />
+
+            <label for="people-siddhartha">Total People:</label>
+            <input
+              type="number"
+              name="people"
+              id="people-siddhartha"
+              min="1"
+              value="1"
+              required
+            />
+
+            <button type="submit">Book Now</button>
+          </form>
+
+          <button
+            class="view-map"
+            onclick="openMap('https://maps.app.goo.gl/EwChTTJa7rG7dXeY6')"
+          >
+            Map
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="chitwan">
+      <h2>Chitwan</h2>
+      <div class="destination-container">
+        <h3>Hotels</h3>
+        <div class="hotel">
+          <h4>Hotel Royal Safari</h4>
+          <img
+            src="/static/images/safari.jpg"
+            alt="Royal_safari"
+            class="destination-image"
+          />
+          <p>Price: $110/night</p>
+
+          <form action="https://formspree.io/f/mgvopbwd" method="POST">
+            <label for="email">Enter Your Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email-royal-safari"
+              required
+              placeholder="Your Email"
+            />
+
+            <label for="date-royal-safari">Select Date:</label>
+            <input type="date" name="date" id="date-royal-safari" required />
+
+            <label for="time-royal-safari">Select Time:</label>
+            <input type="time" name="time" id="time-royal-safari" required />
+
+            <label for="room-type-royal-safari">Type of Room:</label>
+            <select name="room_type" id="room-type-royal-safari" required>
+              <option value="" disabled selected>Select Room Type</option>
+              <option value="single">Single Bed</option>
+              <option value="double">Double Bed</option>
+            </select>
+
+            <label for="rooms-royal-safari">Number of Rooms:</label>
+            <input
+              type="number"
+              name="rooms"
+              id="rooms-royal-safari"
+              min="1"
+              value="1"
+              required
+            />
+
+            <label for="people-royal-safari">Total People:</label>
+            <input
+              type="number"
+              name="people"
+              id="people-royal-safari"
+              min="1"
+              value="1"
+              required
+            />
+
+            <button type="submit">Book Now</button>
+          </form>
+
+          <button
+            class="view-map"
+            onclick="openMap('https://maps.app.goo.gl/5iEBhRiYEe7GZNQZ6')"
+          >
+            Map
+          </button>
+        </div>
+
+        <div class="hotel">
+          <h4>Chitwan Jungle Lodge</h4>
+          <img
+            src="/static/images/royal.jpg"
+            alt="jungle_lodge"
+            class="destination-image"
+          />
+          <p>Price: $115/night</p>
+
+          <form action="https://formspree.io/f/mgvopbwd" method="POST">
+            <label for="email">Enter Your Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email-jungle-lodge"
+              required
+              placeholder="Your Email"
+            />
+
+            <label for="date-jungle-lodge">Select Date:</label>
+            <input type="date" name="date" id="date-jungle-lodge" required />
+
+            <label for="time-jungle-lodge">Select Time:</label>
+            <input type="time" name="time" id="time-jungle-lodge" required />
+
+            <label for="room-type-jungle-lodge">Type of Room:</label>
+            <select name="room_type" id="room-type-jungle-lodge" required>
+              <option value="" disabled selected>Select Room Type</option>
+              <option value="single">Single Bed</option>
+              <option value="double">Double Bed</option>
+            </select>
+
+            <label for="rooms-jungle-lodge">Number of Rooms:</label>
+            <input
+              type="number"
+              name="rooms"
+              id="rooms-jungle-lodge"
+              min="1"
+              value="1"
+              required
+            />
+
+            <label for="people-jungle-lodge">Total People:</label>
+            <input
+              type="number"
+              name="people"
+              id="people-jungle-lodge"
+              min="1"
+              value="1"
+              required
+            />
+
+            <button type="submit">Book Now</button>
+          </form>
+
+          <button
+            class="view-map"
+            onclick="openMap('https://maps.app.goo.gl/v6GwNmPPwQJq3Jbs5')"
+          >
+            Map
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; All Rights Reserved</p>
+    </footer>
+    <script>
+      function openMap(url) {
+        window.open(url, "_blank");
+      }
+    </script>
+  </body>
+</html>
